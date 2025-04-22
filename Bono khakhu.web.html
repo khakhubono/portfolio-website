@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bono Khakhu Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #fff;
+            color: #000;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .dark-mode {
+            background-color: #0d1b2a; /* Night blue */
+            color: #e0e0e0;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #1c1c1c;
+            padding: 1rem 2rem;
+            color: white;
+        }
+
+        .navbar a {
+            color: white;
+            margin-left: 1.5rem;
+            text-decoration: none;
+        }
+
+        .dark-mode .navbar {
+            background-color: #001f3f; /* Dark blue */
+        }
+
+        .container {
+            text-align: center;
+            padding: 3rem 1rem;
+        }
+
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-color: #ddd;
+            display: inline-block;
+        }
+
+        .intro-text {
+            display: inline-block;
+            margin-left: 2rem;
+            text-align: left;
+        }
+
+        .intro-text h1 {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        .intro-text p {
+            font-size: 1rem;
+            color: #777;
+        }
+
+        .buttons {
+            margin-top: 1rem;
+        }
+
+        .btn {
+            padding: 0.75rem 1.5rem;
+            margin: 0.5rem;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            color: white;
+        }
+
+        .btn-clear {
+            background-color: transparent;
+            border: 2px solid #007bff;
+            color: #007bff;
+        }
+
+        .section {
+            padding: 3rem 1rem;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .rounded-box {
+            background-color: #f0f0f0;
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .dark-mode .rounded-box {
+            background-color: #1c2a3a;
+        }
+
+        .projects {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .project-box {
+            width: 200px;
+            height: 200px;
+            background-color: #f9f9f9;
+            border-radius: 50%;
+            padding: 1rem;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .dark-mode .project-box {
+            background-color: #102030;
+        }
+
+        .project-box i {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .project-box a {
+            margin-top: 0.5rem;
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .contact-section {
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .contact-box {
+            background-color: #f9f9f9;
+            padding: 1rem;
+            margin: auto;
+            max-width: 400px;
+            border-radius: 10px;
+        }
+
+        .dark-mode .contact-box {
+            background-color: #102030;
+        }
+
+        .contact-box a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #000;
+            text-decoration: none;
+            margin: 0.5rem 0;
+        }
+
+        .dark-mode .contact-box a {
+            color: #fff;
+        }
+
+        .contact-box i {
+            margin-right: 0.5rem;
+        }
+
+        .dark-mode-toggle {
+            cursor: pointer;
+            padding: 0.5rem;
+            border: none;
+            background: none;
+            color: white;
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <div>Bono Khakhu</div>
+        <div>
+            <a href="#">Home</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+            <button class="dark-mode-toggle" onclick="toggleDarkMode()"><i class="fas fa-moon"></i></button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="profile-pic"></div>
+        <div class="intro-text">
+            <h1>Hello, I'm Bono Khakhu</h1>
+            <p>Software Developer</p>
+            <div class="buttons">
+                <button class="btn btn-primary">Download CV</button>
+                <button class="btn btn-clear">Contact Info</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>About Me</h2>
+        <p>I have a diploma in Software Development from Rosebank College and I enjoy creating mobile and web apps. I'm experienced with Firebase, C#, Android using Kotlin, JavaScript, and Azure DevOps. I’ve developed diary apps, e-commerce websites, booking systems, and more.</p>
+
+        <div class="rounded-box">
+            <h3>Education</h3>
+            <p>NQF Level 6 Diploma in IT Software Development – Rosebank College</p>
+        </div>
+
+        <h3 style="margin-top: 3rem;">Projects</h3>
+        <div class="projects">
+            <div class="project-box">
+                <i class="fas fa-mobile-alt"></i>
+                <strong>Cellphone Number Generator</strong>
+                <a href="#">GitHub</a>
+            </div>
+            <div class="project-box">
+                <i class="fas fa-book"></i>
+                <strong>Online Book Store</strong>
+                <a href="#">GitHub</a>
+            </div>
+            <div class="project-box">
+                <i class="fas fa-cut"></i>
+                <strong>Barber Shop App</strong>
+                <a href="#">GitHub</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact" class="contact-section">
+        <p>get in touch</p>
+        <div class="contact-box">
+            <a href="mailto:khakhubono@gmail.com"><i class="fas fa-envelope"></i> khakhubono@gmail.com</a>
+            <a href="https://www.linkedin.com/in/bono-khakhu" target="_blank"><i class="fab fa-linkedin"></i> Bono Khakhu</a>
+        </div>
+    </div>
+
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+        }
+    </script>
+</body>
+
+</html>
